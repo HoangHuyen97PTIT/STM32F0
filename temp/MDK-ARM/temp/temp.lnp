@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"temp\startup_stm32f051x8.o"
+"temp\main.o"
+"temp\stm32f0xx_it.o"
+"temp\stm32f0xx_hal_msp.o"
+"temp\i2c-lcd.o"
+"temp\bsp_dht11.o"
+"temp\stm32f0xx_hal_i2c.o"
+"temp\stm32f0xx_hal_i2c_ex.o"
+"temp\stm32f0xx_hal_tim.o"
+"temp\stm32f0xx_hal_tim_ex.o"
+"temp\stm32f0xx_hal_rcc.o"
+"temp\stm32f0xx_hal_rcc_ex.o"
+"temp\stm32f0xx_hal.o"
+"temp\stm32f0xx_hal_gpio.o"
+"temp\stm32f0xx_hal_dma.o"
+"temp\stm32f0xx_hal_cortex.o"
+"temp\stm32f0xx_hal_pwr.o"
+"temp\stm32f0xx_hal_pwr_ex.o"
+"temp\stm32f0xx_hal_flash.o"
+"temp\stm32f0xx_hal_flash_ex.o"
+"temp\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "temp\temp.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "temp.map" -o temp\temp.axf
